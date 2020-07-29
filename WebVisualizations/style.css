@@ -1,0 +1,57 @@
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+  background-color: white;
+}
+
+#title {
+  font-size: 40px;
+  color: white;
+  background: #4AAAA5;
+}
+
+h2 {
+  font-size: 30px;
+  color: #4AAAA5;
+}
+
+h3 {
+  font-size: 2px;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+      /* Visual */
+      background-color: rgb(167, 93, 144);
+    }
+  }
+
+.photoedit:hover {
+  /* Visuals */
+  opacity: 0.6;
+}
+  
+/* .summary {
+  background: gray;
+}
+
+.visualizations {
+  background: gray;
+} */
+
+/* Giving our navbar some padding and a background color */
+/* .navbar {
+  padding: 10px;
+  background: white;
+  text-align: right;
+}
+
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+/* .navbar li {
+  display: inline-block;
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 3px;
+} */

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Creates the Overall Grid -->
+    <div class="container">
+
+        <!-- Creates Title and Nav Bar -->
+        <div class="row">
+            <div class="col-md-2">
+                <h1><a href="weather.html" id="title">Latitude</h1></a>
+            </div>
+            <div class="col-md-10">
+                <p>
+                    <!-- <div class="container"> -->
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Plots
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                    <a class="dropdown-item" href="windspeed.html">Windspeed</a>
+                                </div>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="comparison.html">Comparison</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="data.html">Data</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+    </div>
+                <div class="container-fluid" style="background-color: lightgray">
+                    <!-- Creates the main content -->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <section class="summary">
+                                <h2>Summary: Latitude vs. X</h2>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="maxtemp.html"><img src="images/Fig1.png" width="210" height="210"></a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p>The puropose of this project was to analyize how weather changes as you get
+                                            closer to
+                                            the
+                                            equator. To
+                                            accomplish this anaylsis, we first pulled data from the OpenWeatherMap API
+                                            to
+                                            assemble a
+                                            dataset
+                                            on
+                                            over 500 cities. </p>
+
+                                        <p>After assembling the dataset, we used Matplotlib to plot
+                                            various
+                                            aspects of
+                                            the weather vs. latitude. Factors we looked at included: temperature,
+                                            cloudiness,
+                                            wind speed
+                                            and humidity. Thie site provides the source data and visualizations created
+                                            as
+                                            part
+                                            of the
+                                            analysis, as well as explanations and descriptions of any trends and
+                                            correlations
+                                            witnessed.
+                                        </p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-md-4">
+                            <section class="visualizations">
+                                <h2>Visualizations</h2>
+                                <hr>
+                                <table>
+                                    <tr>
+                                        <th><a href="maxtemp.html"><img src="images/Fig1.png" width="150" height="150">
+                                        </th></a>
+                                        <th><a href="humidity.html"><img src="images/Fig2.png" width="150" height="150">
+                                        </th></a>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="cloudiness.html"><img src="images/Fig3.png" width="150"
+                                                    height="150"></td></a>
+                                        <td><a href="windspeed.html"><img src="images/Fig4.png" width="150"
+                                                    height="150"></td></a>
+                                    </tr>
+                                </table>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
